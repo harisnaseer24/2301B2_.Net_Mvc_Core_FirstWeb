@@ -1,0 +1,23 @@
+﻿<div class="container">
+    <h1 class="text-center display-2 fw-bold text-primary">Add a New Product</h1>
+    <form method="post" asp-action="Add">
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" name="password" class="form-control" id="password">
+        </div>
+        
+        <button type="submit" class="btn btn-lg btn-primary text-center">Add Product</button>
+    </form>
+
+    <div>
+
+        <h3>Email: @ViewData["Email"]</h3>
+        <h3>Password: @ViewBag.Password</h3>
+
+    </div>
+</div>
